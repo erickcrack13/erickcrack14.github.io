@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3D Coverflow - Portafolio de una Página</title>
+    <link href="templatemo-3d-coverflow.css" rel="stylesheet">
+</head>
+<body>
+    <header class="header" id="header">
+    <a href="#home" class="logo-container">
+        <div class="logo-container">
+            <img src="images/leon.png" alt="KING DISEÑO" style="width: 100px; height: auto;">
+</div>   
+                    <defs>
+                        <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="100%">
+                            <stop offset="0%" style="stop-color:#667eea;stop-opacity:1" />
+                            <stop offset="100%" style="stop-color:#764ba2;stop-opacity:1" />
+                        </linearGradient>
+                    </defs>
+                    <rect x="10" y="25" width="15" height="50" fill="url(#grad1)" transform="rotate(-15 17.5 50)" />
+                    <rect x="35" y="15" width="15" height="70" fill="url(#grad1)" />
+                    <rect x="60" y="25" width="15" height="50" fill="url(#grad1)" transform="rotate(15 67.5 50)" />
+                    <circle cx="50" cy="50" r="45" fill="none" stroke="url(#grad1)" stroke-width="2" opacity="0.5" />
+                </svg>
+            </div>
+            <div class="logo-text">KING DISEÑO</div>
+        </a>
+        
+        <nav class="main-menu" id="mainMenu">
+            <a href="#home" class="menu-item active">Inicio</a>
+            <a href="ACERCA DE MI.html" class="menu-item">Acerca de</a>
+            <a href="tutorial.html" class="menu-item">Tutorial</a>
+            <a href="CONTACTO.html" class="menu-item">Contacto</a>
+            <a href="https://gemini.google.com/" target="_blank" rel="noopener noreferrer" class="menu-item external">Gemenis</a> 
+        </nav>
+        
+        <div class="menu-toggle" id="menuToggle">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </header>
+
+    <section id="home" class="section">
+        <div class="coverflow-wrapper">
+            <div class="info">
+                <h2 id="current-title">DISEÑOS CREATIVO</h2>
+                <p id="current-description">DISEÑOS MU PROFESIONALES</p>
+            </div>
+
+            <div class="coverflow-container" tabindex="0">
+                <div class="coverflow" id="coverflow">
+                    <div class="coverflow-item" data-index="0">
+                        <div class="cover image-loading">
+                            <img src="images/BATMAN.jpg" alt="PAGINA DE BATMAN" loading="lazy">
+                        </div>
+                        <div class="reflection"></div>
+                    </div>
+                    <div class="coverflow-item" data-index="1">
+                        <div class="cover image-loading">
+                            <img src="images/erick2.png" alt="Camino en el Bosque" loading="lazy">
+                        </div>
+                        <div class="reflection"></div>
+                    </div>
+                    <div class="coverflow-item" data-index="2">
+                        <div class="cover image-loading">
+                            <img src="images/erick3.jpg" alt="Reflejo en el Lago" loading="lazy">
+                        </div>
+                        <div class="reflection"></div>
+                    </div>
+                    <div class="coverflow-item" data-index="3">
+                        <div class="cover image-loading">
+                            <img src="images/erick4.jpg" alt="Atardecer en el Océano" loading="lazy">
+                        </div>
+                        <div class="reflection"></div>
+                    </div>
+                    <div class="coverflow-item" data-index="4">
+                        <div class="cover image-loading">
+                            <img src="images/pagina5.jpg" alt="Dunas del Desierto" loading="lazy">
+                        </div>
+                        <div class="reflection"></div>
+                    </div>
+                    <div class="coverflow-item" data-index="5">
+                        <div class="cover image-loading">
+                            <img src="images/JUEGOS.jpg" alt="Noche Estrellada" loading="lazy">
+                        </div>
+                        <div class="reflection"></div>
+                    </div>
+                    <div class="coverflow-item" data-index="6">
+                        <div class="cover image-loading">
+                            <img src="images/juego123.jpg" alt="Cascada" loading="lazy">
+                        </div>
+                        <div class="reflection"></div>
+                    </div>
+                </div>
+
+                <button class="nav-button prev" onclick="navigate(-1)">‹</button>
+                <button class="nav-button next" onclick="navigate(1)">›</button>
+
+                <div class="dots-container" id="dots"></div>
+                
+                <button class="play-pause-button" id="playPauseBtn" onclick="toggleAutoplay()">
+                    <span class="play-icon">▶</span>
+                    <span class="pause-icon" style="display: none;">❚❚</span>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="section">
+        <div class="about-content">
+            <div class="about-header">
+                <h2>DESCUBRE COMO PUEDES MEJORAR TU PAGINA</h2>
+                <p>Una forma revolucionaria de mostrar tu contenido visual con impresionantes efectos 3D e interacciones fluidas.</p>
+            </div>
+            
+            <div class="about-main">
+                <div class="about-visual">
+                    <div class="showcase-display">
+                        <div class="showcase-main">
+                            <div class="corner-decoration top-left"></div>
+                            <div class="corner-decoration bottom-right"></div>
+                            
+                            <div class="showcase-logo">
+                                <img src="images/leon.png" alt="KING DISEÑO" style="width: 100px; height: auto;">
+                                    <rect x="10" y="25" width="15" height="50" fill="white" transform="rotate(-15 17.5 50)" opacity="0.9" />
+                                    <rect x="35" y="15" width="15" height="70" fill="white" />
+                                    <rect x="60" y="25" width="15" height="50" fill="white" transform="rotate(15 67.5 50)" opacity="0.9" />
+                                    <circle cx="50" cy="50" r="45" fill="none" stroke="white" stroke-width="2" opacity="0.3" />
+                                </svg>
+                            </div>
+                            
+                            <h3 class="showcase-title">KING DISEÑO</h3>
+                            <p class="showcase-subtitle">TRASFORMA TU PAGINA EN PORTAFOLIO CREATIVO Y MAS VISUALES</p>
+                            
+                            <div class="showcase-badges">
+                                <a href="https://developer.mozilla.org/en-US/docs/Web/HTML" target="_blank" rel="noopener noreferrer" class="badge">HTML5</a>
+                                <a href="https://developer.mozilla.org/en-US/docs/Web/CSS" target="_blank" rel="noopener noreferrer" class="badge">CSS3</a>
+                                <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank" rel="noopener noreferrer" class="badge">JavaScript</a>
+                                <a href="https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Responsive_Design" target="_blank" rel="noopener noreferrer" class="badge">Adaptable</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="about-info">
+                    <h3>Eleva la experiencia de tu galería</h3>
+                    <p>3D Coverflow es un producto de TemplateMo. Transforma la forma en que presentas imágenes con nuestra tecnología 3D coverflow de vanguardia. Crea galerías interactivas e inmersivas que cautivan a tu audiencia y dejan una impresión duradera.</p>
+                    <p>Ya sea que estés mostrando piezas de portafolio, imágenes de productos o creando una historia interactiva, nuestro 3D coverflow da vida a tu contenido con animaciones fluidas y controles intuitivos.</p>
+                    
+                    <ul class="feature-list">
+                        <li>Transiciones 3D fluidas con aceleración por hardware</li>
+                        <li>Navegación táctil para dispositivos móviles</li>
+                        <li>Reproducción automática y controles de tiempo personalizables</li>
+                        <li>Soporte para navegación con teclado</li>
+                        <li>Efectos de reflejo para mayor profundidad</li>
+                    </ul>
+                    
+                    <a href="tutorial.html" class="cta-button">
+                        DESCUBRE COMO MEJORAR TU PAGINA
+                        <svg viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M5 12h14m-7-7l7 7-7 7" stroke="currentColor" stroke-width="2" fill="none"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+            
+            <div class="stats-section">
+                <div class="stat-item">
+                    <div class="stat-number">60fps</div>
+                    <div class="stat-label">Rendimiento Fluido</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">100%</div>
+                    <div class="stat-label">Diseño Adaptable</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">3D</div>
+                    <div class="stat-label">Efectos Visuales</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">∞</div>
+                    <div class="stat-label">Personalización</div>
+                </div>
+            </div>
+        </div>
+    </section>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-copyright">
+                © 2025 3D Coverflow. Todos los derechos reservados. | Diseñado por <a href="https://templatemo.com" target="_blank" rel="noopener noreferrer">TemplateMo</a>
+            </div>
+            <div class="footer-links">
+                <a href="#privacy" onclick="event.preventDefault(); alert('La página de Política de Privacidad iría aquí');">Política de Privacidad</a>
+                <a href="#terms" onclick="event.preventDefault(); alert('La página de Términos de Servicio iría aquí');">Términos de Servicio</a>
+            </div>
+        </div>
+    </footer>
+
+    <div class="scroll-to-top" id="scrollToTop">
+        <span>↑</span>
+    </div>
+
+<script src="templatemo-3d-coverflow-scripts.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tutorial - Cómo crear una página web</title>
+    <link href="templatemo-3d-coverflow.css" rel="stylesheet">
+</head>
+<body>
+    <header class="header" id="header">
+        <a href="index.html" class="logo-container">
+            <div class="logo-container">
+                <img src="images/leon.png" alt="KING DISEÑO" style="width: 100px; height: auto;">
+</div>   
+                    <defs>
+                        <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="100%">
+                            <stop offset="0%" style="stop-color:#667eea;stop-opacity:1" />
+                            <stop offset="100%" style="stop-color:#764ba2;stop-opacity:1" />
+                        </linearGradient>
+                    </defs>
+                    <rect x="10" y="25" width="15" height="50" fill="url(#grad1)" transform="rotate(-15 17.5 50)" />
+                    <rect x="35" y="15" width="15" height="70" fill="url(#grad1)" />
+                    <rect x="60" y="25" width="15" height="50" fill="url(#grad1)" transform="rotate(15 67.5 50)" />
+                    <circle cx="50" cy="50" r="45" fill="none" stroke="url(#grad1)" stroke-width="2" opacity="0.5" />
+                </svg>
+            </div>
+            <div class="logo-text">KING DISEÑO</div>
+        </a>
+
+        </a>
+        
+        <nav class="main-menu" id="mainMenu">
+            <a href="index.html" class="menu-item">Inicio</a>
+            <a href="ACERCA DE MI.html" class="menu-item">Acerca de</a>
+            <a href="tutorial.html" class="menu-item active">Tutorial</a> 
+            <a href="CONTACTO.html" class="menu-item">Contacto</a>
+            <a href="https://gemini.google.com/" target="_blank" rel="noopener noreferrer" class="menu-item external">Gemenis</a>
+        </nav>
+        
+        <div class="menu-toggle" id="menuToggle">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </header>
+
+    <div class="tutorial-content">
+        <h1>Cómo crear una página web para diseñadores (Básico)</h1>
+        <p>Este tutorial está diseñado para diseñadores que quieren dar sus primeros pasos en la creación de sitios web, combinando sus habilidades visuales con los fundamentos de HTML, CSS y JavaScript.</p>
+        
+        <div class="tutorial-layout">
+            <div class="tutorial-videos">
+                <div class="video-container">
+                    <h3>Tutorial de HTML</h3>
+                    <iframe width="653" height="490" src="https://www.youtube.com/embed/6ugyXGk9DBk" title="tutorial de como hacer una pagina basica" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+
+                <div class="video-container">
+                    <h3>Tutorial de CSS</h3>
+                    <iframe width="653" height="490" src="https://www.youtube.com/embed/Hdl9zGHGq1U" title="erick" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+            </div>
+
+            <div class="tutorial-steps">
+                <div class="step">
+                    <h3>Paso 1: Entender la estructura (HTML)</h3>
+                    <p>Todo sitio web se construye con HTML (la estructura). Empieza con una plantilla simple y personalízala.</p>
+                </div>
+                
+                <div class="step">
+                    <h3>Paso 2: Dale estilo a tu sitio (CSS)</h3>
+                    <p>Como diseñador, el CSS será tu mejor amigo. Esta hoja de estilos te permite darle color, tipografía y diseño a tu página web.</p>
+                </div>
+                
+                <div class="step">
+                    <h3>Paso 3: Usa herramientas visuales</h3>
+                    <p>No necesitas escribir todo el código a mano. Herramientas como Webflow, Figma con plugins o incluso editores de código con autocompletado pueden acelerar tu flujo de trabajo. Entender el código te permitirá personalizar lo que estas herramientas no pueden hacer.</p>
+                </div>
+                
+                <div class="step">
+                    <h3>Paso 4: Elige un sistema de alojamiento (Hosting)</h3>
+                    <p>Para que tu página esté en línea, necesitas un lugar donde almacenarla. Servicios como Netlify, Vercel o incluso GitHub Pages son excelentes opciones gratuitas y sencillas para proyectos pequeños.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-copyright">
+                © 2025 3D Coverflow. Todos los derechos reservados. | Diseñado por <a href="index.html" target="_blank" rel="noopener noreferrer">TemplateMo</a>
+            </div>
+            <div class="footer-links">
+                <a href="#privacy" onclick="event.preventDefault(); alert('La página de Política de Privacidad iría aquí');">Política de Privacidad</a>
+                <a href="#terms" onclick="event.preventDefault(); alert('La página de Términos de Servicio iría aquí');">Términos de Servicio</a>
+            </div>
+        </div>
+    </footer>
+    
+    <div class="scroll-to-top" id="scrollToTop">
+        <span>↑</span>
+    </div>
+
+    <script src="templatemo-3d-coverflow-scripts.js"></script>
+</body>
+</html>
