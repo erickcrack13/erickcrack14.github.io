@@ -1,45 +1,160 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tutorial - Cómo crear una página web</title>
-    <link href="templatemo-3d-coverflow.css" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tutorial - Cómo crear una página web</title>
+    <link href="templatemo-3d-coverflow.css" rel="stylesheet">
+    <style>
+        /* Estilos generales para el diseño de escritorio */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        /* Encabezado */
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 50px;
+            background-color: #fff;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        .logo-container {
+            display: flex;
+            align-items: center;
+        }
+
+        .logo-text {
+            margin-left: 10px;
+            font-weight: bold;
+            font-size: 24px;
+        }
+
+        .main-menu {
+            display: flex;
+            gap: 30px;
+        }
+
+        .menu-item {
+            text-decoration: none;
+            color: #333;
+            font-weight: bold;
+            padding: 10px 15px;
+            transition: color 0.3s;
+        }
+
+        .menu-item:hover {
+            color: #667eea;
+        }
+
+        .menu-toggle {
+            display: none;
+        }
+
+        /* Contenido del tutorial */
+        .tutorial-content {
+            flex-grow: 1;
+            max-width: 1200px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+
+        .tutorial-content h1, .tutorial-content h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        
+        .tutorial-content p {
+            text-align: center;
+            max-width: 800px;
+            margin: 0 auto 40px;
+        }
+
+        .tutorial-layout {
+            display: flex;
+            gap: 50px;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin-bottom: 50px;
+        }
+
+        .tutorial-videos, .tutorial-steps {
+            flex: 1;
+            min-width: 300px;
+        }
+        
+        .video-container {
+            margin-bottom: 30px;
+        }
+
+        .tutorial-videos iframe {
+            width: 100%;
+            height: 350px;
+            border-radius: 10px;
+        }
+
+        .step {
+            margin-bottom: 25px;
+        }
+
+        /* Pie de página */
+        .footer {
+            background-color: #f4f4f4;
+            padding: 20px 50px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: auto;
+        }
+
+        .footer-content {
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+        }
+
+        .footer-links a {
+            margin-left: 20px;
+            color: #777;
+            text-decoration: none;
+        }
+
+        .scroll-to-top {
+            display: none !important;
+        }
+    </style>
 </head>
 <body>
-    <header class="header" id="header">
-        <a href="index.html" class="logo-container">
-            <div class="logo-container">
-                <img src="images/leon.png" alt="KING DISEÑO" style="width: 100px; height: auto;">
-            </div>
-            <svg width="100" height="100" class="logo-svg">                 <defs>
-                    <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="100%">
-                        <stop offset="0%" style="stop-color:#667eea;stop-opacity:1" />
-                        <stop offset="100%" style="stop-color:#764ba2;stop-opacity:1" />
-                    </linearGradient>
-                </defs>
-                <rect x="10" y="25" width="15" height="50" fill="url(#grad1)" transform="rotate(-15 17.5 50)" />
-                <rect x="35" y="15" width="15" height="70" fill="url(#grad1)" />
-                <rect x="60" y="25" width="15" height="50" fill="url(#grad1)" transform="rotate(15 67.5 50)" />
-                <circle cx="50" cy="50" r="45" fill="none" stroke="url(#grad1)" stroke-width="2" opacity="0.5" />
-            </svg>
-            <div class="logo-text">KING DISEÑO</div>
-        </a>
-        
-        <nav class="main-menu" id="mainMenu">
-            <a href="index.html" class="menu-item">Inicio</a>
-            <a href="ACERCA DE MI.html" class="menu-item">Acerca de</a>
-            <a href="tutorial.html" class="menu-item active">Tutorial</a> 
-            <a href="CONTACTO.html" class="menu-item">Contacto</a>
-            <a href="https://gemini.google.com/" target="_blank" rel="noopener noreferrer" class="menu-item external">Gemenis</a>
-        </nav>
-        
-        <div class="menu-toggle" id="menuToggle">
-            <span></span>
-            <span></span>
-            <span></span>
-        </div>
-    </header>
+    
+    <header class="header" id="header">
+        <a href="index.html" class="logo-container">
+            <div class="logo-container">
+                <img src="images/leon.png" alt="KING DISEÑO" style="width: 100px; height: auto;">
+            </div>  
+            <div class="logo-text">KING DISEÑO</div>
+        </a>
+
+        <nav class="main-menu" id="mainMenu">
+            <a href="index.html" class="menu-item">Inicio</a>
+            <a href="ACERCA DE MI.html" class="menu-item">Acerca de</a>
+            <a href="tutorial.html" class="menu-item active">Tutorial</a> 
+            <a href="CONTACTO.html" class="menu-item">Contacto</a>
+            <a href="https://gemini.google.com/" target="_blank" rel="noopener noreferrer" class="menu-item external">Gemenis</a>
+        </nav>
+        
+        <div class="menu-toggle" id="menuToggle">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </header>
 
     <div class="tutorial-content">
         <h1>Cómo crear una página web para diseñadores (Básico)</h1>
@@ -82,22 +197,22 @@
         </div>
     </div>
     
-    <footer class="footer">
-        <div class="footer-content">
-            <div class="footer-copyright">
-                © 2025 3D Coverflow. Todos los derechos reservados. | Diseñado por <a href="index.html" target="_blank" rel="noopener noreferrer">TemplateMo</a>
-            </div>
-            <div class="footer-links">
-                <a href="#privacy" onclick="event.preventDefault(); alert('La página de Política de Privacidad iría aquí');">Política de Privacidad</a>
-                <a href="#terms" onclick="event.preventDefault(); alert('La página de Términos de Servicio iría aquí');">Términos de Servicio</a>
-            </div>
-        </div>
-    </footer>
-    
-    <div class="scroll-to-top" id="scrollToTop">
-        <span>↑</span>
-    </div>
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-copyright">
+                © 2025 3D Coverflow. Todos los derechos reservados. | Diseñado por <a href="index.html" target="_blank" rel="noopener noreferrer">TemplateMo</a>
+            </div>
+            <div class="footer-links">
+                <a href="#privacy" onclick="event.preventDefault(); alert('La página de Política de Privacidad iría aquí');">Política de Privacidad</a>
+                <a href="#terms" onclick="event.preventDefault(); alert('La página de Términos de Servicio iría aquí');">Términos de Servicio</a>
+            </div>
+        </div>
+    </footer>
+    
+    <div class="scroll-to-top" id="scrollToTop">
+        <span>↑</span>
+    </div>
 
-    <script src="templatemo-3d-coverflow-scripts.js"></script>
+    <script src="templatemo-3d-coverflow-scripts.js"></script>
 </body>
 </html>
