@@ -5,6 +5,166 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contacto - KING DISEÑO</title>
     <link href="templatemo-3d-coverflow.css" rel="stylesheet">
+    <style>
+        /* Estilos generales para el diseño de escritorio */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        /* Encabezado */
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 50px;
+            background-color: #000000;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        .logo-container {
+            display: flex;
+            align-items: center;
+        }
+
+        .logo-text {
+            margin-left: 10px;
+            font-weight: bold;
+            font-size: 24px;
+        }
+
+        .main-menu {
+            display: flex;
+            gap: 30px;
+        }
+
+        .menu-item {
+            text-decoration: none;
+            color: #333;
+            font-weight: bold;
+            padding: 10px 15px;
+            transition: color 0.3s;
+        }
+
+        .menu-item:hover {
+            color: #667eea;
+        }
+
+        .menu-toggle {
+            display: none;
+        }
+
+        /* Contenido Principal de Contacto */
+        .contact-page-container {
+            flex-grow: 1;
+            max-width: 1200px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+
+        .contact-page-content {
+            display: flex;
+            gap: 50px;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .contact-info-section, .contact-form-section {
+            flex: 1;
+            min-width: 300px;
+        }
+
+        .contact-header {
+            width: 100%;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        
+        .contact-details-and-form {
+            display: flex;
+            width: 100%;
+            gap: 50px;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        /* Ajustes de tamaño para el formulario */
+        .contact-form {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        .form-group {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .form-group label {
+            margin-bottom: 5px;
+            font-weight: bold;
+            color: #555;
+        }
+
+        .form-group input, .form-group textarea {
+            width: 100%; /* El 100% de su contenedor padre */
+            padding: 12px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 16px;
+            box-sizing: border-box; /* Asegura que el padding no añada ancho extra */
+        }
+        
+        .form-group textarea {
+            resize: vertical; /* Permite redimensionar solo verticalmente */
+            min-height: 150px; /* Altura mínima para el campo de mensaje */
+        }
+
+        .submit-btn {
+            padding: 15px 30px;
+            background: linear-gradient(to right, #667eea, #764ba2);
+            color: #fff;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: transform 0.3s;
+        }
+
+        .submit-btn:hover {
+            transform: translateY(-2px);
+        }
+
+        /* Pie de página */
+        .footer {
+            background-color: #000000;
+            padding: 20px 50px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: auto;
+        }
+
+        .footer-content {
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+        }
+
+        .footer-links a {
+            margin-left: 20px;
+            color: #777;
+            text-decoration: none;
+        }
+
+        .scroll-to-top {
+            display: none !important;
+        }
+    </style>
 </head>
 <body>
     
@@ -12,21 +172,8 @@
         <a href="index.html#home" class="logo-container">
             <div class="logo-container">
                 <img src="images/leon.png" alt="KING DISEÑO" style="width: 100px; height: auto;">
-</div>   
-                    <defs>
-                        <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="100%">
-                            <stop offset="0%" style="stop-color:#667eea;stop-opacity:1" />
-                            <stop offset="100%" style="stop-color:#764ba2;stop-opacity:1" />
-                        </linearGradient>
-                    </defs>
-                    <rect x="10" y="25" width="15" height="50" fill="url(#grad1)" transform="rotate(-15 17.5 50)" />
-                    <rect x="35" y="15" width="15" height="70" fill="url(#grad1)" />
-                    <rect x="60" y="25" width="15" height="50" fill="url(#grad1)" transform="rotate(15 67.5 50)" />
-                    <circle cx="50" cy="50" r="45" fill="none" stroke="url(#grad1)" stroke-width="2" opacity="0.5" />
-                </svg>
-            </div>
+            </div>  
             <div class="logo-text">KING DISEÑO</div>
-        </a>
         </a>
         
         <nav class="main-menu" id="mainMenu">
