@@ -3,184 +3,37 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contacto - KING DISEÑO</title>
+    <title>Tutorial - Cómo crear una página web</title>
     <link href="templatemo-3d-coverflow.css" rel="stylesheet">
-    <style>
-        /* Estilos generales para el diseño de escritorio */
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            display: flex;
-            flex-direction: column;
-            min-height: 100vh;
-        }
-
-        /* Encabezado */
-        .header {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 20px 50px;
-            background-color: #000000;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-        }
-
-        .logo-container {
-            display: flex;
-            align-items: center;
-        }
-
-        .logo-text {
-            margin-left: 10px;
-            font-weight: bold;
-            font-size: 24px;
-        }
-
-        .main-menu {
-            display: flex;
-            gap: 30px;
-        }
-
-        .menu-item {
-            text-decoration: none;
-            color: #333;
-            font-weight: bold;
-            padding: 10px 15px;
-            transition: color 0.3s;
-        }
-
-        .menu-item:hover {
-            color: #667eea;
-        }
-
-        .menu-toggle {
-            display: none;
-        }
-
-        /* Contenido Principal de Contacto */
-        .contact-page-container {
-            flex-grow: 1;
-            max-width: 1200px;
-            margin: 40px auto;
-            padding: 0 20px;
-        }
-
-        .contact-page-content {
-            display: flex;
-            gap: 50px;
-            flex-wrap: wrap;
-            justify-content: center;
-        }
-
-        .contact-info-section, .contact-form-section {
-            flex: 1;
-            min-width: 300px;
-        }
-
-        .contact-header {
-            width: 100%;
-            text-align: center;
-            margin-bottom: 30px;
-        }
-        
-        .contact-details-and-form {
-            display: flex;
-            width: 100%;
-            gap: 50px;
-            flex-wrap: wrap;
-            justify-content: center;
-        }
-
-        /* Ajustes de tamaño para el formulario */
-        .contact-form {
-            display: flex;
-            flex-direction: column;
-            gap: 10px;
-        }
-
-        .form-group {
-            display: flex;
-            flex-direction: column;
-        }
-
-        .form-group label {
-            margin-bottom: 5px;
-            font-weight: bold;
-            color: #555;
-        }
-
-        .form-group input, .form-group textarea {
-            width: 100%; /* El 100% de su contenedor padre */
-            padding: 12px;
-            border: 1px solid #ccc;
-            border-radius: 5px;
-            font-size: 16px;
-            box-sizing: border-box; /* Asegura que el padding no añada ancho extra */
-        }
-        
-        .form-group textarea {
-            resize: vertical; /* Permite redimensionar solo verticalmente */
-            min-height: 150px; /* Altura mínima para el campo de mensaje */
-        }
-
-        .submit-btn {
-            padding: 15px 30px;
-            background: linear-gradient(to right, #667eea, #764ba2);
-            color: #fff;
-            border: none;
-            cursor: pointer;
-            border-radius: 5px;
-            font-weight: bold;
-            transition: transform 0.3s;
-        }
-
-        .submit-btn:hover {
-            transform: translateY(-2px);
-        }
-
-        /* Pie de página */
-        .footer {
-            background-color: #000000;
-            padding: 20px 50px;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            margin-top: auto;
-        }
-
-        .footer-content {
-            display: flex;
-            justify-content: space-between;
-            width: 100%;
-        }
-
-        .footer-links a {
-            margin-left: 20px;
-            color: #777;
-            text-decoration: none;
-        }
-
-        .scroll-to-top {
-            display: none !important;
-        }
-    </style>
 </head>
 <body>
-    
     <header class="header" id="header">
-        <a href="index.html#home" class="logo-container">
+        <a href="index.html" class="logo-container">
             <div class="logo-container">
                 <img src="images/leon.png" alt="KING DISEÑO" style="width: 100px; height: auto;">
-            </div>  
+</div>   
+                    <defs>
+                        <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="100%">
+                            <stop offset="0%" style="stop-color:#667eea;stop-opacity:1" />
+                            <stop offset="100%" style="stop-color:#764ba2;stop-opacity:1" />
+                        </linearGradient>
+                    </defs>
+                    <rect x="10" y="25" width="15" height="50" fill="url(#grad1)" transform="rotate(-15 17.5 50)" />
+                    <rect x="35" y="15" width="15" height="70" fill="url(#grad1)" />
+                    <rect x="60" y="25" width="15" height="50" fill="url(#grad1)" transform="rotate(15 67.5 50)" />
+                    <circle cx="50" cy="50" r="45" fill="none" stroke="url(#grad1)" stroke-width="2" opacity="0.5" />
+                </svg>
+            </div>
             <div class="logo-text">KING DISEÑO</div>
+        </a>
+
         </a>
         
         <nav class="main-menu" id="mainMenu">
-            <a href="index.html#home" class="menu-item">Inicio</a>
+            <a href="index.html" class="menu-item">Inicio</a>
             <a href="ACERCA DE MI.html" class="menu-item">Acerca de</a>
-            <a href="tutorial.html" class="menu-item">Tutorial</a> 
-            <a href="contact.html" class="menu-item active">Contacto</a>
+            <a href="tutorial.html" class="menu-item active">Tutorial</a> 
+            <a href="CONTACTO.html" class="menu-item">Contacto</a>
             <a href="https://gemini.google.com/" target="_blank" rel="noopener noreferrer" class="menu-item external">Gemenis</a>
         </nav>
         
@@ -191,74 +44,55 @@
         </div>
     </header>
 
-    <div class="contact-page-container">
-        <div class="contact-page-content">
-            <div class="contact-header">
-                <h2>Ponte en Contacto</h2>
-                <p>¿Tienes un proyecto en mente? Creemos algo increíble juntos.</p>
+    <div class="tutorial-content">
+        <h1>Cómo crear una página web para diseñadores (Básico)</h1>
+        <p>Este tutorial está diseñado para diseñadores que quieren dar sus primeros pasos en la creación de sitios web, combinando sus habilidades visuales con los fundamentos de HTML, CSS y JavaScript.</p>
+        
+        <div class="tutorial-layout">
+            <div class="tutorial-videos">
+                <div class="video-container">
+                    <h3>Tutorial de HTML</h3>
+                    <iframe width="653" height="490" src="https://www.youtube.com/embed/6ugyXGk9DBk" title="tutorial de como hacer una pagina basica" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+
+                <div class="video-container">
+                    <h3>Tutorial de CSS</h3>
+                    <iframe width="653" height="490" src="https://www.youtube.com/embed/Hdl9zGHGq1U" title="erick" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
             </div>
-            
-            <div class="contact-details-and-form">
-                <div class="contact-info-section">
-                    <h3>Información de Contacto</h3>
-                    <p>Estamos aquí para ayudarte a hacer realidad tu visión. Ya sea que necesites una galería impresionante, un rediseño completo de un sitio web o un trabajo de desarrollo personalizado, nos encantaría saber de ti.</p>
-                    
-                    <div class="contact-details">
-                        <div class="contact-item">
-                            <div class="contact-icon">
-                                <svg viewBox="0 0 24 24"><path fill="currentColor" d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
-                            </div>
-                            <div class="contact-text">
-                                <h4>Correo Electrónico</h4>
-                                <p>hello@kingdiseno.com</p>
-                            </div>
-                        </div>
-                        
-                        <div class="contact-item">
-                            <div class="contact-icon">
-                                <svg viewBox="0 0 24 24"><path fill="currentColor" d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg>
-                            </div>
-                            <div class="contact-text">
-                                <h4>Teléfono</h4>
-                                <p>+1 (555) 123-4567</p>
-                            </div>
-                        </div>
-                    </div>
+
+            <div class="tutorial-steps">
+                <div class="step">
+                    <h3>Paso 1: Entender la estructura (HTML)</h3>
+                    <p>Todo sitio web se construye con HTML (la estructura). Empieza con una plantilla simple y personalízala.</p>
                 </div>
                 
-                <div class="contact-form-section">
-                    <form class="contact-form" onsubmit="handleSubmit(event)">
-                        <div class="form-group">
-                            <label for="name">Tu Nombre</label>
-                            <input type="text" id="name" name="name" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="email">Correo Electrónico</label>
-                            <input type="email" id="email" name="email" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="subject">Asunto</label>
-                            <input type="text" id="subject" name="subject" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="message">Mensaje</label>
-                            <textarea id="message" name="message" required></textarea>
-                        </div>
-                        <button type="submit" class="submit-btn">Enviar Mensaje</button>
-                    </form>
+                <div class="step">
+                    <h3>Paso 2: Dale estilo a tu sitio (CSS)</h3>
+                    <p>Como diseñador, el CSS será tu mejor amigo. Esta hoja de estilos te permite darle color, tipografía y diseño a tu página web.</p>
+                </div>
+                
+                <div class="step">
+                    <h3>Paso 3: Usa herramientas visuales</h3>
+                    <p>No necesitas escribir todo el código a mano. Herramientas como Webflow, Figma con plugins o incluso editores de código con autocompletado pueden acelerar tu flujo de trabajo. Entender el código te permitirá personalizar lo que estas herramientas no pueden hacer.</p>
+                </div>
+                
+                <div class="step">
+                    <h3>Paso 4: Elige un sistema de alojamiento (Hosting)</h3>
+                    <p>Para que tu página esté en línea, necesitas un lugar donde almacenarla. Servicios como Netlify, Vercel o incluso GitHub Pages son excelentes opciones gratuitas y sencillas para proyectos pequeños.</p>
                 </div>
             </div>
         </div>
     </div>
-
+    
     <footer class="footer">
         <div class="footer-content">
             <div class="footer-copyright">
-                © 2025 KING DISEÑO. Todos los derechos reservados. | Diseñado por <a href="index.html" target="_blank" rel="noopener noreferrer">TemplateMo</a>
+                © 2025 3D Coverflow. Todos los derechos reservados. | Diseñado por <a href="index.html" target="_blank" rel="noopener noreferrer">TemplateMo</a>
             </div>
             <div class="footer-links">
-                <a href="index.html#privacy" onclick="event.preventDefault(); alert('La página de Política de Privacidad iría aquí');">Política de Privacidad</a>
-                <a href="index.html#terms" onclick="event.preventDefault(); alert('La página de Términos de Servicio iría aquí');">Términos de Servicio</a>
+                <a href="#privacy" onclick="event.preventDefault(); alert('La página de Política de Privacidad iría aquí');">Política de Privacidad</a>
+                <a href="#terms" onclick="event.preventDefault(); alert('La página de Términos de Servicio iría aquí');">Términos de Servicio</a>
             </div>
         </div>
     </footer>
