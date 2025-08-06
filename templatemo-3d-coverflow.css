@@ -1038,10 +1038,15 @@ body {
     .menu-toggle.active span:nth-child(3) {
         transform: rotate(45deg) translate(-5px, -6px);
     }
+    
+    /* --- Ajustes específicos para el carrusel en móviles --- */
+    .coverflow-wrapper {
+        padding-top: 60px;
+    }
 
     .coverflow-item {
-        width: 200px;
-        height: 200px;
+        width: 180px;
+        height: 180px;
     }
 
     .nav-button {
@@ -1051,11 +1056,11 @@ body {
     }
 
     .nav-button.prev {
-        left: 20px;
+        left: 10px;
     }
 
     .nav-button.next {
-        right: 20px;
+        right: 10px;
     }
 
     .info h2 {
@@ -1065,6 +1070,7 @@ body {
     .info p {
         font-size: 14px;
     }
+    /* --- Fin de los ajustes del carrusel --- */
 
     .logo-text {
         font-size: 20px;
@@ -1151,8 +1157,8 @@ body {
     }
 
     .coverflow-item {
-        width: 180px;
-        height: 180px;
+        width: 150px;
+        height: 150px;
     }
 
     .about-content,
@@ -1283,7 +1289,7 @@ body {
 .tutorial-content h2,
 .tutorial-content p {
     text-align: center;
-    color: #fff;
+    color: #fffbfb;
     margin-bottom: 20px;
 }
 
@@ -1324,7 +1330,7 @@ body {
 
 .step {
     margin-bottom: 30px;
-    background-color: #1a1a1a;
+    background-color: #000000;
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
